@@ -1,0 +1,93 @@
+section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Main blog styling */
+article {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    margin-bottom: 30px;
+    max-width: 850px;
+}
+
+article p {
+    margin-bottom: 0px;
+}
+
+article img {
+    width: 100%;
+    border: 2px solid rgb(117, 113, 104);
+    margin-bottom: 20px;
+}
+
+/* Recent posts styling */
+.recent {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 1500px;
+    width: 100%;
+} 
+
+.recent > h2 {
+    width: 100%;
+}
+
+.recent a {
+    text-decoration: none;
+    width: 50%;
+}
+
+.recent article {
+    background-color: #302e2e;
+    padding: 7%;
+    margin: 10px;
+    transition: background-color 0.3s;
+}
+
+.recent article:hover {
+    background-color: #573202;
+}
+
+.recent img {
+    margin-bottom: 0;
+}
+
+.recent article h2 {
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+/* Headings and font styling adjustments */
+h1 {
+    margin-bottom: 30px;
+    font-size: 3rem;
+    line-height: 1.2;
+}
+
+h2 {
+    margin-bottom: 5px;
+}
+
+h3 {
+    color: #858585;
+    margin-bottom: 10px;
+}
+
+/* 2k resolution font resize*/
+@media only screen and (min-width: 2500px) {
+    h1 {
+        font-size: 4.3rem;
+    }
+}
+

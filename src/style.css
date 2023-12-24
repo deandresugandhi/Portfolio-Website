@@ -1,0 +1,188 @@
+* {
+    font-family: "futura-pt", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html, body, main  {
+    min-height: 100vh;
+    width: 100%;
+    color-scheme: dark;
+}
+
+main {
+    padding-top: calc(56px + 8vh);
+    padding-bottom: 5vh;
+    z-index: 1;
+}
+
+body {
+    background-color: #181818;
+}
+
+section {
+    padding-left: 12vw;
+    padding-right: 12vw;
+}
+
+article {
+    color: #acacac;
+    max-width: 850px;
+}
+
+/* Headings & font styling */
+h1, h2, h3 {
+    color: #cccccc;
+}
+
+h1 {
+    font-weight: 700;
+    font-size: 4.5rem;
+    line-height: .9;
+    margin-bottom: 20px;
+}
+
+h2 {
+    font-weight: 600;
+    font-size: 1.6rem;
+}
+
+h3 {
+    font-weight: 500;
+    font-size: 1.2rem;
+}
+
+p {
+    color: #acacac;
+    font-size: 1.2rem;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+a {
+    text-decoration: none;
+}
+
+strong {
+    font-weight: 700;
+    color: #E3963E;
+}
+
+/* Navigation Bar */
+nav {
+    z-index: 3;
+    width: 100vw;
+    height: 56px;
+    padding: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    position: fixed;
+    border-bottom: 1px solid #E3963E;
+    top: 0;
+    left: 0;
+    font-size: 10px;
+    background-color: #252525;
+    color: #cccccc;
+    display: flex;
+    align-items: center;
+}
+
+nav a {
+    margin-left: 10px;
+    letter-spacing: 1.5px;
+    color: inherit;
+    text-decoration: none;
+    transition: .5s;
+}
+
+.mainmenu a:hover {
+    border-bottom: 1px solid #E3963E;
+    font-size: 1.2rem;
+}
+
+.mainmenu a {
+    display: none;
+}
+
+.mobilemenu {
+    z-index: 2;
+    height: 200px;
+    font-size: 1.2rem;
+    top: -200px;
+    background-color: #333333;
+    color: #cccccc;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    transition: ease-in-out 0.5s;
+}
+
+.mobilemenu a {
+    font-weight: 500;
+    text-align: center;
+}
+
+.mobilemenu.active {
+    top: 56px;
+}
+
+.hamburger img {
+    width: 50px;
+    height: 50px;
+    filter: brightness(0) invert(1);
+    transition: .5s;
+}
+
+.hamburger.active img {
+    filter: invert(70%) sepia(30%) saturate(1100%) hue-rotate(339deg) brightness(85%) contrast(89%);
+}
+
+.logo {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-grow: 1;
+    margin-left: 5px;
+}
+
+.logo p {
+    font-size: 30px;
+    font-weight: 800;
+    letter-spacing: -0.5px;
+    margin-bottom: 0px;
+}
+
+/* Navigation Bar Styling for Large Tablet & Bigger Devices */
+@media only screen and (min-width: 850px) {
+    .mobilemenu {
+        display: none;
+    }
+    .hamburger{
+        display: none;
+    }
+    .mainmenu a {
+        font-size: 1.1rem;
+        font-weight: 500;
+        margin-left: 25px;
+        display: block;
+    }
+}
+
+/* 2k resolution font resize*/
+@media only screen and (min-width: 2500px) {
+    h1 {
+        font-size: 6.5rem;
+    }
+    h2 {
+        font-size: 2.2rem;
+    }
+    h3 {
+        font-size: 1.5rem;
+    }
+    p {
+        font-size: 1.5rem;
+    }
+}
