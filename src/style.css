@@ -74,39 +74,67 @@ strong {
 /* Navigation Bar */
 nav {
     z-index: 3;
-    width: 100vw;
-    height: 56px;
-    padding: 10px;
-    padding-left: 20px;
-    padding-right: 20px;
+    display: flex;
+    justify-content: center;
     position: fixed;
-    border-bottom: 1px solid #E3963E;
-    top: 0;
-    left: 0;
+    top: 25px;
+    width: 100%;
+}
+
+.navblock {
+    width: 60vw;
+    height: 56px;
+    border-bottom: 2px solid #e3963ee3;
     font-size: 10px;
-    background-color: #252525;
+    background-color: #252525da;
+    backdrop-filter: blur(6px);
     color: #cccccc;
     display: flex;
     align-items: center;
+    justify-content: center;
+    border-radius: 100px;
 }
 
-nav a {
-    margin-left: 10px;
+.navblock a {
     letter-spacing: 1.5px;
+    border-top: 1px solid #e3963e00;
+    border-bottom: 1px solid #e3963e00;
     color: inherit;
     text-decoration: none;
     transition: .5s;
+    display: flex;
+    justify-content: center;
 }
 
-.mainmenu a:hover {
-    border-bottom: 1px solid #E3963E;
-    font-size: 1.2rem;
-}
-
+/* Desktop Navigation Bar */
 .mainmenu a {
+    position: relative;
     display: none;
 }
 
+.mainmenu a:before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    border-bottom: 1px solid #E3963E;
+    visibility: hidden;
+    transform: scaleX(0);
+    transition: all 0.3s ease-in-out;
+  }
+
+.mainmenu a:hover:before {
+    visibility: visible;
+    transform: scaleX(1)
+}
+
+.mainmenu a:hover {
+    letter-spacing: 3px;
+    color:#ffffff
+}
+
+/* Mobile Navigation Bar */
 .mobilemenu {
     z-index: 2;
     height: 200px;
@@ -129,6 +157,11 @@ nav a {
     top: 56px;
 }
 
+.mobilemenu a:hover {
+    letter-spacing: 3px;
+    color:#ffffff
+}
+
 .hamburger img {
     width: 50px;
     height: 50px;
@@ -138,21 +171,6 @@ nav a {
 
 .hamburger.active img {
     filter: invert(70%) sepia(30%) saturate(1100%) hue-rotate(339deg) brightness(85%) contrast(89%);
-}
-
-.logo {
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    flex-grow: 1;
-    margin-left: 5px;
-}
-
-.logo p {
-    font-size: 30px;
-    font-weight: 800;
-    letter-spacing: -0.5px;
-    margin-bottom: 0px;
 }
 
 /* Navigation Bar Styling for Large Tablet & Bigger Devices */
@@ -166,7 +184,8 @@ nav a {
     .mainmenu a {
         font-size: 1.1rem;
         font-weight: 500;
-        margin-left: 25px;
+        margin-right: 18px;
+        margin-left: 18px;
         display: block;
     }
 }

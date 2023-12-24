@@ -51,13 +51,13 @@ header h2:first-of-type {
 }
 
 /* "Find out more" link styling */
-h2:last-of-type {
+a h2:last-of-type {
     text-align: right;
     transform-origin: 100% 50%;
     transition: 0.5s;
 }
 
-h2:last-of-type:hover {
+a h2:last-of-type:hover {
     color:#E3963E;
     scale: 1.2;
 }
