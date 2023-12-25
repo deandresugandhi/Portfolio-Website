@@ -3,7 +3,7 @@ main {
     flex-direction: column;
     justify-content: flex-start;
     padding-bottom: 0;
-    padding-top: 56px;
+    padding-top: 120px;
 }
 
 section {
@@ -46,6 +46,11 @@ h2 {
     flex-direction: column;
     justify-content: center;
     min-height: 650px;
+}
+
+.contacts article {
+    margin-top: 25px;
+    margin-bottom: 50px;
 }
 
 .contacts ul {
@@ -133,14 +138,14 @@ h2 {
 /* FHD Desktop styling */
 @media only screen and (min-width: 1700px) {
     h1 {
-        font-size: calc(20 / 100 * 900px);
+        font-size: calc(20 / 100 * 800px);
     }
 }
 
 /* 2k & higher resolution desktop styling */
 @media only screen and (min-width: 2000px) {
     h1 {
-        font-size: calc(20 / 100 * 1200px);
+        font-size: calc(20 / 100 * 1000px);
     }
 
 }
