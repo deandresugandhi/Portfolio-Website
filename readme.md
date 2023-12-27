@@ -16,7 +16,7 @@
 
 
 ## Purpose
-The portfolio website is designed to represent me as an IT professional. It provides the viewers with information about my skills, background, interests, personality, and work. It will be used to communicate my abilities to prospective employers, cllients, or collaborators.
+The portfolio website is designed to represent me as an IT professional. It provides the viewers with information about my skills, background, interests, personality, and work. It will be used to communicate my abilities to prospective employers, clients, or collaborators.
 
 ## Target Audience
 The target audience are IT professionals looking to collaborate or employers looking to hire a dev or IT professional. They have technical knowledge in IT, software development, and programming languages. They also have certation expectations in relation to professionalism and work ethic.
