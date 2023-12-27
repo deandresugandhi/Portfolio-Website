@@ -2,7 +2,7 @@
 
 ### Student: Deandre Sugandhi
 
-[Website](https://deandre-sugandhi-t1-a2.vercel.app/)<br>
+[Website](https://deandresugandhi.dev/)<br>
 [Github Repo](https://github.com/deandresugandhi/DeandreSugandhi_T1A2)
 
 ## Table of Contents
